@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+ 
+} */
+
+.container{
+  background: rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(10px);
+/* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+border-radius: 15px;
+
+margin-top: 50px;
+
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.3s ease-in-out;
+  padding: 20px;
+}
+
+
+.card:hover {
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
+}
+
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 10%;
+  min-height: 100vh;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to right, #ffffff, #e9ecef);
+  min-width: 70%;
+}
+
+.hero-content {
+  max-width: 500px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 6px 30px;
+  background-color: #ffdd00fa;
+  
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 20px;
+  transition:  0.3s;
+  color: #333;
+  border: #fff;
+ 
+ 
+}
+
+.btn:hover {
+  background-color: #77b300;
+}
+
+
+.hero-image img {
+  width: 600px;
+  max-width: 100%;
+  animation: float 2s ease-in-out infinite;
+}
+
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+
+.fade-in.delay {
+  animation-delay: 0.5s;
+}
+
+.fade-in.delay2 {
+  animation-delay: 1s;
+}
+
+.fade-in-right {
+  opacity: 0;
+  transform: translateX(50px);
+  animation: fadeInRight 1s 1.2s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 42px;
+    margin-top: 30px;
+   
+}
+.footer .Ftext{
+    margin-inline: 72px;
+}
+.Ftext p{
+    margin-top: 22px;
+}
+
+
+.foot {
+  background-color: #333;
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+  margin-top: 40px;
+  height: 60px;
+}
+
+
+
+
+
+
+
+
